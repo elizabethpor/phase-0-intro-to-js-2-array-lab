@@ -25,12 +25,8 @@ function prependCat(name) {
     return [name, ...cats];
 }
 function removeLastCat() {
- //   const noLastCatArray = [cats.slice(-1)];
- //   return noLastCatArray;
-    return [cats.slice(0, -1)];
+    return cats.slice(0, cats.length -1);
 }
 function removeFirstCat() {
- //   const noFirstCat = [cats.slice(1)];
- //   return noFirstCat;
-    return [cats.slice(1)];
+    return cats.slice(1);
 }
